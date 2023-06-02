@@ -1,5 +1,16 @@
 # Message Board
-Using MySQL
+
+A message board web application built using HTML, CSS, PHP, and JavaScript. Features include user login and registration, post creation, and commenting.
+
+# Installation
+
+### Clone the repository:
+```shell
+git clone https://github.com/PatrickLisiecki/message-board.git
+cd message-board
+```
+
+### Configure the database using MySQL:
 ```MySQL
 CREATE TABLE users (
     userid INT PRIMARY KEY AUTO_INCREMENT,
@@ -29,20 +40,27 @@ CREATE TABLE comments (
 );
 ```
 
-After cloning\
-Create a private folder in root folder\
-In folder create config.ini\
-Inside config.ini have your db credentials
-```
+### Create a configuration file:
+* Create a private folder in the project's root directory
+* In the private folder create a "config.ini" file
+* Inside the config file include your database credentials
+```ini
 [database]
-username = ""
-password = ""
-dbname = ""
+username = "your-username"
+password = "your-password"
+dbname = "your-dbname"
 ```
 
-To run locally
-```bash
-php -S localhost:9999
+### Start a local development server:
+```php
+php -S localhost:7000
 ```
-or what ever other port you want then go to\
-localhost:9999/src/Login/login.php
+
+### Open the project in the browser:
+```php
+localhost:7000/src/login/login.php
+```
+
+# Collaborators
+* https://github.com/PatrickLisiecki
+* https://github.com/okGus
